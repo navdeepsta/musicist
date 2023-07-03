@@ -4,8 +4,8 @@ export default function List(props) {
   return (
      <ul>
         {
-         props.tracks.map((track, index) => 
-                              <Track   key={track.songTitle + index}
+         props.tracks.map((track) => 
+                              <Track   key={track.uri}
                                        track={track}
                                        listType={props.listType} 
                                        addTrack={props.addTrack} 

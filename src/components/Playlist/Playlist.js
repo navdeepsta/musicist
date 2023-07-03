@@ -4,7 +4,7 @@ import List from '../List/List'
 import styles from './Playlist.module.css'
 
 export default function Playlist(props) {
-  const {onChangePlaylistName, playlistName} = props;
+  const {onChangePlaylistName, playlistName, saveToSpotify} = props;
   const handleChange = ({target})=>{
     onChangePlaylistName(target.value);
   }
@@ -18,7 +18,7 @@ export default function Playlist(props) {
         value = {playlistName}
       />
       <List tracks={props.tracks} listType={props.listType} removeTrack={props.removeTrack}/> 
-      <Button name="Save To Spotify"/>
+      <Button name="Save To Spotify" onClickSaveToSpotify={saveToSpotify}/>
     </div>
   )
 }

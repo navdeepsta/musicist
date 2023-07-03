@@ -17,7 +17,12 @@ export default function SearchResults(props) {
 
   const removeTrackFromPlaylist = (track) => {
     if(playlist.includes(track))
-    setPlaylist(playlist.filter( prev => prev.id !== track.id))
+    setPlaylist(playlist.filter( prev => prev.uri !== track.uri))
+  }
+
+  const savePlaylistToSpotify = () => {
+    alert("Playlist has been saved to your account");
+    setPlaylist([]);
   }
 
   return (
@@ -29,7 +34,9 @@ export default function SearchResults(props) {
         onChangePlaylistName = {handlePlaylistName} 
         listType = "playlist"
         tracks = {playlist}
-        removeTrack = {removeTrackFromPlaylist} />
+        removeTrack = {removeTrackFromPlaylist} 
+        saveToSpotify = {savePlaylistToSpotify}
+        />
     </div>
   )
 }

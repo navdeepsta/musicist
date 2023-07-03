@@ -5,7 +5,7 @@ export default function Track({track, listType, addTrack, removeTrack}) {
   if(listType === "tracklist")
   return (
     <div>
-      id:{track.id} | Title : {track.songTitle} | Artist : {track.artistName} | Album : {track.album} 
+      {track.uri} 
       <Button name="add" onClickAddTrack={addTrack} track={track} />
      
     </div>
@@ -14,7 +14,7 @@ export default function Track({track, listType, addTrack, removeTrack}) {
   if(listType === "playlist")
   return (
     <div>
-       id:{track.id} | Title : {track.songTitle} | Artist : {track.artistName} | Album : {track.album} 
+      {track.uri} 
       <Button name="remove" onClickRemoveTrack={removeTrack} track={track} />
      
     </div>

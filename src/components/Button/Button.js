@@ -8,6 +8,9 @@ export default function Button(props) {
     if(props.name === "remove") {
       props.onClickRemoveTrack(props.track);
     }
+    if(props.name === "Save To Spotify") {
+      props. onClickSaveToSpotify();
+    }
   }
   return (
     <button onClick={handleClick} >{props.name}</button>
