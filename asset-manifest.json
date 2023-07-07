@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/musicist/static/css/main.08e4682d.css",
-    "main.js": "/musicist/static/js/main.5f55cf1f.js",
+    "main.css": "/musicist/static/css/main.5d82451e.css",
+    "main.js": "/musicist/static/js/main.289b2a68.js",
     "static/js/787.548aa499.chunk.js": "/musicist/static/js/787.548aa499.chunk.js",
-    "static/media/logo.svg": "/musicist/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/spotify_icon.svg": "/musicist/static/media/spotify_icon.08cc82bb3909fc283d6b.svg",
     "index.html": "/musicist/index.html",
-    "main.08e4682d.css.map": "/musicist/static/css/main.08e4682d.css.map",
-    "main.5f55cf1f.js.map": "/musicist/static/js/main.5f55cf1f.js.map",
+    "main.5d82451e.css.map": "/musicist/static/css/main.5d82451e.css.map",
+    "main.289b2a68.js.map": "/musicist/static/js/main.289b2a68.js.map",
     "787.548aa499.chunk.js.map": "/musicist/static/js/787.548aa499.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08e4682d.css",
-    "static/js/main.5f55cf1f.js"
+    "static/css/main.5d82451e.css",
+    "static/js/main.289b2a68.js"
   ]
 }
