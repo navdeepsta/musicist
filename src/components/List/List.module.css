@@ -1,0 +1,25 @@
+.scrollable_list_wrapper{
+    height : 70vh;
+    width : 100%;
+    overflow-y : scroll;
+}
+
+/* Customize the scrollbar */
+.scrollable_list_wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollable_list_wrapper::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.scrollable_list_wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(205, 152, 27);
+    border-radius: 5px;
+}
+
+.scrollable_list_wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+  

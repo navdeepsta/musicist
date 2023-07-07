@@ -1,13 +1,27 @@
 import React, {useState, useEffect } from 'react'
 import apiURL from '../../spotify';
-export default function Profile() {
-  const [displayName, setDisplayName] = useState(null);
+import Timer from '../Timer/Timer';
+export default function Profile(props) {
+  
+  const [tracks, setTracks] = useState(null);
 
   useEffect(()=>{
-    apiURL.get("me").then(response => setDisplayName(response.data.display_name));
+    apiURL.get("search?q=alone&type=track")
+      .then(response => {
+          setTracks(response.data.tracks.items);
+          console.log(response.data.tracks.items);
+       })
+       .catch(error=>{
+            
+       })
   }, [])
 
   return (
-    <div>Profile <h1>{displayName}</h1></div>
+    <div>
+      Albums   
+      {tracks && tracks.map((track)=>{
+        return <>{track.album.name}<br /></>
+      })}
+    </div>
   )
 }

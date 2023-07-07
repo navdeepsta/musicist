@@ -11,14 +11,21 @@ export function validatePlaylistInput(inputValue) {
     validateForValidLength(inputValue)
 }
 
-export function validatePlaylist(playlist) {
-  if(playlist.length === 0) throw new Error("Your playlist is empty. Please add songs to it.")
+export function validatePlaylist(playlistName, playlist) {
+  if(playlist.length === 0) throw new Error(playlistName +" is empty. Please add songs to it.")
+  
 }
 
 export function validateForEmptyValue(inputValue) {
   if (inputValue.trim().length === 0) {
     throw new Error("Input value is empty.");
   }
+}
+
+export function validateForUniqueName(playlistName, userSpotifyPlaylist) {
+    userSpotifyPlaylist.forEach(element => {
+      if(element.name === playlistName) throw new Error(playlistName+" already exists.");
+    });
 }
 
 function validateForValidLength(inputValue) {

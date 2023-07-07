@@ -1,0 +1,15 @@
+.container{
+    height:15vh;
+}
+
+.searchbar{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.validation_error {
+    text-align: center;
+    color: red;
+}

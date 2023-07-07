@@ -1,4 +1,9 @@
 .border {
     border : 0;
+    width: 100%;
     border-bottom: 1px solid gray;
+} 
+
+.validation_error {
+    color: red;
 }

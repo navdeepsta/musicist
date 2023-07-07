@@ -13,6 +13,6 @@ export default function Button(props) {
     }
   }
   return (
-    <button onClick={handleClick} >{props.name}</button>
+    <button onClick={handleClick} style={props.style}>{props.value}</button>
   )
 }

@@ -1,9 +1,12 @@
 import axios from 'axios'
-
+import {client_id, redirect_uri} from './credentials'
+// Spotify authorization endpoints
 const authorizationEndPoint = "https://accounts.spotify.com/authorize?";
-const client_id = "d9b6cf1536a24070ad61ab27d20ac1f2";
-const redirect_uri = "http://localhost:3000";
-const scopes = ["user-library-read", "playlist-read-private"];
+
+// Scopes for authorization 
+const scopes = ["user-library-read", "playlist-read-private", "playlist-modify-public"];
+
+// Redirect user to Spotify login page
 export const loginEndPoint = `${authorizationEndPoint}client_id=${client_id}&redirect_uri=${redirect_uri}
 &scopre=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
